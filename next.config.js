@@ -5,10 +5,10 @@ const nextConfig = {
   basePath: process.env.NODE_ENV === 'production' ? '/sera' : '',
   trailingSlash: true,
   images: {
-    loader: 'akamai',
-    path: '',
+    unoptimized: true,
   },
   assetPrefix: process.env.NODE_ENV === 'production' ? '/sera' : '',
+  output: 'export',
 };
 
 module.exports = nextConfig;
